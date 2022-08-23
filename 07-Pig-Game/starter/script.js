@@ -36,6 +36,9 @@ function resetGame() {
   scores[0] = 0;
   scores[1] = 0;
   diceImage.classList.add('hidden');
+  activePlayer = 1;
+  player0El.classList.add('player--active');
+  player1El.classList.remove('player--active');
 }
 
 function roll() {
